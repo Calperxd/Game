@@ -20,7 +20,7 @@ BUILD    := ./build
 LIB	 	 := ./lib
 OBJ_DIR  := $(BUILD)/objects
 APP_DIR  := $(BUILD)/apps
-TARGET   := program
+TARGET   := program.x
 INCLUDE  := -Iinclude/
 SRC      :=                      \
    $(wildcard src/main/*.cpp) \
