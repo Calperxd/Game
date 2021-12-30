@@ -4,8 +4,7 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/allegro-5.2.7.0/include",
-                "${workspaceFolder}/allegro-5.2.7.0/include/**"
+                "${workspaceFolder}/include/**"
             ],
             "defines": [],
             "compilerPath": "/home/calper/Desktop/Gertec/MP35/toolchain/bin/clang",
