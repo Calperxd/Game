@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/allegro-5.2.7.0/include",
+                "${workspaceFolder}/allegro-5.2.7.0/include/**"
+            ],
+            "defines": [],
+            "compilerPath": "/home/calper/Desktop/Gertec/MP35/toolchain/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-clang-arm"
+        }
+    ],
+    "version": 4
+}
