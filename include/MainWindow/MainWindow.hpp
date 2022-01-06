@@ -6,10 +6,11 @@
 class MainWindow
 {
 private:
-    static unsigned short int height;
-    static unsigned short int width; 
+    unsigned short int height;
+    unsigned short int width; 
 public:
     MainWindow();
+    MainWindow(unsigned int WindowWidth, unsigned int WindowHeight);
     ~MainWindow();
-    int main_window_start(void);
+    bool main_window_start(void);
 };

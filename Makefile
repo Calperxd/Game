@@ -14,22 +14,22 @@
 #
 
 CXX      := -c++
-CXXFLAGS := -pedantic-errors -Wall -Wextra
+CXXFLAGS := -pedantic-errors -Wall -Wextra -Wno-unused-parameter
 LDFLAGS  := -L/usr/lib -lstdc++ -lm -L./lib/allegro5 -lallegro -lallegro_font
 BUILD    := ./build
 LIB	 	 := ./lib
 OBJ_DIR  := $(BUILD)/objects
 APP_DIR  := $(BUILD)/apps
 TARGET   := program.x
-INCLUDE  := -Iinclude/
+INCLUDE  := -Iinclude/	
 SRC      :=                      \
-   $(wildcard src/main/*.cpp) \
-#   $(wildcard src/module2/*.cpp) \
+	$(wildcard src/main/*.cpp) \
+	$(wildcard src/MainWindow/*.cpp) \
 #   $(wildcard src/*.cpp)         \
 
 OBJECTS  := $(SRC:%.cpp=$(OBJ_DIR)/%.o)
 DEPENDENCIES \
-         := $(OBJECTS:.o=.d)
+			:= $(OBJECTS:.o=.d)
 
 all: build $(APP_DIR)/$(TARGET)
 
